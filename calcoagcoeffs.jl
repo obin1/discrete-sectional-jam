@@ -125,12 +125,13 @@ function calcoagcoeffs(ND, DIS_SECT, sLim, sLim0, sLen, κ, binsPer2, KERNEL, co
                     coagSrcCoefs[jj,ii] = coagSrcCoefs[ii,jj]
                 end    # the jj loop
             end        # the ii loop
+            # remove previously printed numbers
             for nn = 1 : length(infoDisSec)
                 print("\b")
             end
         end    # discrete and sectional bin interactions
-        print("\b \b")
-        println("\b \t completed")
+        
+        print("  completed\n")
     end
 
     # S-S coagulation
@@ -189,10 +190,11 @@ function calcoagcoeffs(ND, DIS_SECT, sLim, sLim0, sLen, κ, binsPer2, KERNEL, co
                 coagSrcCoefs[jj,ii] = coagSrcCoefs[ii,jj]
             end # jj loop
         end     # ii loop
+        # delete previous number without deleting anything else
         for nn = 1:length(infoSecSec)
             print("\b")
         end
-        print("\t completed")
+        print("..  completed")
     end
 
     experiment_name = Prefix*"coag_"*KERNEL*"_ND"*string(ND)*"_NT"*string(NT)*"_"*string(binsPer2)

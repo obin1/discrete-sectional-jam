@@ -1,20 +1,20 @@
 
 #=**************************************************************************
 
-The Julia Aerosol Module (JAM) acts as the main function for a 
+This acts as the main function for a 
 discrete-sectional aerosol model.  The model simulates the evolution
 of a single condensable species into a particle side distribution,
 including representation of nucleation, coagulation, condensation,
 external gas production, evaporation, wall loss, and other external losses.
 
-JAM in its current form was created for the final project ENE 527 Climate Change and Aerosols
+This module in its current form was created for the final project ENE 527 Climate Change and Aerosols
 and was written to replicate a MATLAB discrete-sectional aerosol model
 Li, C., & Cai, R. (2020). Tutorial: The discrete-sectional method to simulate an evolving aerosol. 
 Journal of Aerosol Science, 150, 105615. https://doi.org/10.1016/j.jaerosci.2020.105615
 Original MATLAB model available at: https://github.com/chenxi20JT/discrete-sectional-code
 Translated to Julia by Obin Sturm (psturm@usc.edu) November 2022
 
-Jam may change in the future to no longer replicate the MATLAB discrete-sectional model.
+THis model may change in the future to no longer replicate the MATLAB discrete-sectional model.
 **************************************************************************=#
 
 module Jam
